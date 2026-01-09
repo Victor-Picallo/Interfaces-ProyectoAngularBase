@@ -1,0 +1,11 @@
+<!-- DIRECTIVAS -->
+ <!-- Uso de @if ANTIGUA -->
+<p>El valor del numero es: {{numero}}</p>
+<button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded" (click)="Incrementar()">Incrementar</button>
+<button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded" (click)="Decrementar()">Decrementar</button>
+
+@if(isEven()) {
+    <p>El numero {{numero}} es PAR</p>
+} @else {
+    <p>El numero {{numero}} es IMPAR</p>
+}

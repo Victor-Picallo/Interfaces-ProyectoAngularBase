@@ -1,0 +1,10 @@
+<!-- DIRECTIVAS -->
+ <!-- Uso de *ngIf ANTIGUA -->
+<p>El valor del numero es: {{numero}}</p>
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="Incrementar()">Incrementar</button>
+<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="Decrementar()">Decrementar</button>
+
+<!-- Se puede hacer de AMBAS formas -->
+<p *ngIf="numero%2 === 0">El numero {{numero}} es PAR</p>
+<!-- ES MEJOR ESTA FORMA -->
+<p *ngIf="isOdd()">El numero {{numero}} es IMPAR</p>
