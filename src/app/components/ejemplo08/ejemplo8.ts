@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './ejemplo8.css',
 })
 export class Ejemplo8 {
+  resultado = 0;
 
+  sumar(numero1: number, numero2: number) {
+    this.resultado = numero1 + numero2;
+  }
 }

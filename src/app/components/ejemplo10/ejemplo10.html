@@ -1,1 +1,13 @@
-<p>ejemplo10 works!</p>
+<!-- PIPES -->
+ <h1>Pipe de FECHA</h1>
+ <div>Hoy es: {{hoy}} </div>
+ <div>Hoy es: {{hoy | date}} </div>
+ <div>Hoy es: {{hoy | date:'medium'}} </div>
+ <div>Hoy es: {{hoy | date:'dd/MM/yyyy'}} </div>
+ <br>
+ <h1>Pipe de TEXTO</h1>
+ <div>Mi nombre es: {{nombre}}</div>
+ <div>Mi nombre es: {{nombre | uppercase}}</div>
+ <br>
+ <h1>Pipe PERSONALIZADO</h1>
+ <div>Mi nombre es: {{nombre | mayuspares}}</div>

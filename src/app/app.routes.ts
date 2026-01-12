@@ -1,17 +1,19 @@
 import { Routes } from '@angular/router';
 import { Ejemplo0 } from "./components/ejemplo0/ejemplo0";
-import { Ejemplo1 } from "./components/ejemplo1/ejemplo1";
-import { Ejemplo2 } from './components/ejemplo2/ejemplo2';
-import { Ejemplo3 } from './components/ejemplo3/ejemplo3';
-import { Ejemplo3b } from './components/ejemplo3b/ejemplo3b';
-import { Ejemplo4b } from './components/ejemplo4b/ejemplo4b';
-import { Ejemplo4 } from './components/ejemplo4/ejemplo4';
-import { Ejemplo5 } from './components/ejemplo5/ejemplo5';
-import { Ejemplo6 } from './components/ejemplo6/ejemplo6';
-import { Ejemplo7 } from './components/ejemplo7/ejemplo7';
-import { Ejemplo8 } from './components/ejemplo8/ejemplo8';
-import { Ejemplo9 } from './components/ejemplo9/ejemplo9';
+import { Ejemplo1 } from "./components/ejemplo01/ejemplo1";
+import { Ejemplo2 } from './components/ejemplo02/ejemplo2';
+import { Ejemplo3 } from './components/ejemplo03/ejemplo3';
+import { Ejemplo3b } from './components/ejemplo03b/ejemplo3b';
+import { Ejemplo4b } from './components/ejemplo04b/ejemplo4b';
+import { Ejemplo4 } from './components/ejemplo04/ejemplo4';
+import { Ejemplo5 } from './components/ejemplo05/ejemplo5';
+import { Ejemplo6 } from './components/ejemplo06/ejemplo6';
+import { Ejemplo7 } from './components/ejemplo07/ejemplo7';
+import { Ejemplo8 } from './components/ejemplo08/ejemplo8';
+import { Ejemplo9 } from './components/ejemplo09/ejemplo9';
 import { Ejemplo10 } from './components/ejemplo10/ejemplo10';
+import { Ejercicio1 } from './components/ejercicio01/ejercicio1';
+import { Ejemplo11 } from './components/ejemplo11/ejemplo11';
 
 export const routes: Routes = [
     {path: 'ej0', component: Ejemplo0},
@@ -27,4 +29,6 @@ export const routes: Routes = [
     {path: 'ej8', component: Ejemplo8},
     {path: 'ej9', component: Ejemplo9},
     {path: 'ej10', component: Ejemplo10},
+    {path: 'ej11', component: Ejemplo11},
+    {path: 'ejer1', component: Ejercicio1},
 ];

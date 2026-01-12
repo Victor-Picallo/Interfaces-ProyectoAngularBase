@@ -12,6 +12,10 @@ ng new proyecto --routing
 ```
 ng generate component tuComponente o ng g c tuComponente
 ```
+### Crear un nuevo PIPE Angular
+```
+ng generate pipe tuPipe o ng g pipe tuPipe
+```
 
 # TeoriaAngularBase2026
 

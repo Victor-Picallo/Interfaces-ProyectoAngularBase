@@ -1,0 +1,7 @@
+<!-- Property bounds en styles y class-->
+ <div class="pink">Esto es un div rosa</div>
+ <div [class.pink]="theme === 'pastel'">Esto es un div rosa si la variable theme vale 'pastel'</div>
+ <div [class.pink]="theme === 'dark'">Esto no es un div rosa si la variable theme vale 'dark'</div>
+ <!-- No funciona tailwind asi: <div class.bd-red-100/>-->
+<div [ngClass]="{'bg-red-500': theme === 'pastel'}">Fondo rojo si es pastel usando ngClass</div>
+<div [class]="theme === 'pastel' ? 'bg-red-100' : ''">Fondo rojo suave con operador ternario</div>

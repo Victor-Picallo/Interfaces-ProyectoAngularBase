@@ -1,0 +1,14 @@
+<!-- Crea un componente ejercicio1 -->
+<!-- Dada una lista de numeros array. Muestra solamente los 
+ numeros impares. Y las superiores a 100 los mostraras de color rojo -->
+
+<h1>Lista de numeros</h1>
+<br>
+@for(num of numeros; track num){
+   @if(isOdd(num)) {
+    <li [class.text-red]="num > 100">Los {{num}} es impar</li>
+   } 
+}@empty {
+    <p>No hay numeros disponibles</p>
+}
+
