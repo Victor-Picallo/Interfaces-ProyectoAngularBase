@@ -1,0 +1,10 @@
+<h1>Listado de personajes de Rick & Morty MEJOR</h1>
+
+@let personajes = (personajes$ | async)?.results;
+
+@for (personaje of personajes; track personaje.id) {
+    <br>
+    <p class="p-3 border-2 rounded-lg">{{personaje.name}}</p>
+    <br>
+    <img [src]="personaje.image" width="300px"/>
+}

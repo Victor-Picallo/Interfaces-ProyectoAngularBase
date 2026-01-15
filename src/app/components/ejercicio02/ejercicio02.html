@@ -1,0 +1,16 @@
+<!--
+Crea un formulario donde el usuario pueda introducir altura y peso
+Cuando el formulario se envie, se mostrara el IMC (Indice de Masa Corporal)
+de esa persona.
+-->
+
+<h1>Calculadora de IMC</h1>
+<form (ngSubmit)="calcularIMC()">
+    <label class="border-3 m-3 bg-yellow-100">Altura (metros): 
+        <input type="number" name="altura" placeholder="Altura" [(ngModel)]="altura"/>
+    </label>
+    <label class="border-3 m-3 bg-yellow-100">Peso (kg): 
+        <input type="number" name="peso" placeholder="Peso" [(ngModel)]="peso"/>
+    </label>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Calcular IMC</button>
+</form>

@@ -17,6 +17,11 @@ ng generate component tuComponente o ng g c tuComponente
 ng generate pipe tuPipe o ng g pipe tuPipe
 ```
 
+### Instalamos Angular Material IMPORTANTE
+```
+ng add @angular/material
+```
+
 # TeoriaAngularBase2026
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
