@@ -10,14 +10,14 @@ import { CommonModule } from '@angular/common';
 })
 export class Ejemplo14 {
 
-  personajes: any[] = [];
+  personajes: Character[] = [];
 
   //Forma antigua
   constructor(private rickandmortyService: RickandmortyService) {
     //Acceder a la API de Rick & Morty para leer todos los personajes
     console.log(rickandmortyService.getAll().subscribe(personajes => {
       console.log(personajes)
-      this.personajes = personajes.results as any
+      this.personajes = personajes.results as Character[];
     })
   )
   }

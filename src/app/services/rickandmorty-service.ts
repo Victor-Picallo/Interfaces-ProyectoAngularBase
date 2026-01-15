@@ -2,13 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 
-interface Character {
-  name: string;
-  status: string;
-  species: string;
-  image: string;
-  // Otros campos relevantes pueden ser añadidos aquí
-}
 
 interface Characters {
   results: Character[];
