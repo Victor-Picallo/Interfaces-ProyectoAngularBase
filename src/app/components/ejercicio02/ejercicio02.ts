@@ -10,10 +10,11 @@ import { FormsModule } from '@angular/forms';
 export class Ejercicio02 {
   altura = 0;
   peso = 0;
+  imc= 0;
   calcularIMC() {
     const alturaEnMetros = this.altura / 100;
-    const imc = this.peso / (alturaEnMetros * alturaEnMetros);
-    alert(`Tu IMC es ${imc}`);
+    this.imc = this.peso / (alturaEnMetros * alturaEnMetros);
+    alert(`Tu IMC es ${this.imc}`);
   }
 
 }
