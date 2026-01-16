@@ -1,1 +1,26 @@
-<p>ejemplo19 works!</p>
+<!--Formularios reactivos-->
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+    <label>Nombre <input class="border-2 rounded-lg p-2 bg-amber-200" formControlName="nombre" /> </label>
+    @if(form.get('nombre')?.invalid){
+        <small>
+            @if(form.get('nombre')?.hasError('required')){
+                <p class="text-red-500 text-sm">El nombre es obligatorio</p>
+            }
+            @if(form.get('nombre')?.hasError('minlength')){
+                <p class="text-red-500 text-sm">El nombre debe tener al menos 3 caracteres</p>
+            }
+        </small>
+    }
+    <label>Email <input  class="border-2 rounded-lg p-2 bg-amber-200" formControlName="email" type="email" /> </label>
+    @if(form.get('email')?.invalid){
+        <small>
+            @if(form.get('email')?.hasError('required')){
+                <p class="text-red-500 text-sm">El email es obligatorio</p>
+            }
+            @if(form.get('email')?.hasError('email')){
+                <p class="text-red-500 text-sm">El email no es valido</p>
+            }
+        </small>
+    }
+    <button [disabled]="form.invalid">Enviar</button>
+</form>

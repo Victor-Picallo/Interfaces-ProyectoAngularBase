@@ -16,6 +16,10 @@ ng generate component tuComponente o ng g c tuComponente
 ```
 ng generate pipe tuPipe o ng g pipe tuPipe
 ```
+### Crea un nuevo Service
+```
+ng generate service services/tuService o ng g s services/tuService
+```
 
 ### Instalamos Angular Material IMPORTANTE
 ```

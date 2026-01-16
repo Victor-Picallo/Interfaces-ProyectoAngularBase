@@ -5,13 +5,16 @@ de esa persona.
 -->
 
 <h1>Calculadora de IMC</h1>
+<br>
 <form (ngSubmit)="calcularIMC()">
-    <label class="border-3 m-3 bg-yellow-100">Altura (metros): 
+    <label class="border-3 m-3 p-3 bg-yellow-100">Altura (metros): 
         <input type="number" name="altura" placeholder="Altura" [(ngModel)]="altura"/>
     </label>
-    <label class="border-3 m-3 bg-yellow-100">Peso (kg): 
+    <label class="border-3 m-3 p-3 bg-yellow-100">Peso (kg): 
         <input type="number" name="peso" placeholder="Peso" [(ngModel)]="peso"/>
     </label>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Calcular IMC</button>
-
+    <br>
+    <button class="flex-box m-10 p-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Calcular IMC</button>
+    <br>
+    <h1>Tu IMC es: {{imc}}</h1>
 </form>

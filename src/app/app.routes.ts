@@ -27,6 +27,7 @@ import { Ejemplo20 } from './components/ejemplo20/ejemplo20';
 import { Ejemplo19 } from './components/ejemplo19/ejemplo19';
 import { Ejemplo18 } from './components/ejemplo18/ejemplo18';
 import { Ejercicio02 } from './components/ejercicio02/ejercicio02';
+import { Ejercicio03 } from './components/ejercicio03/ejercicio03';
 
 export const routes: Routes = [
     {path: 'ej0', component: Ejemplo0},
@@ -58,4 +59,5 @@ export const routes: Routes = [
     {path: 'ej20', component: Ejemplo20},
     {path: 'ejer1', component: Ejercicio1},
     {path: 'ejer2', component: Ejercicio02},
+    {path: 'ejer3', component: Ejercicio03},
 ];

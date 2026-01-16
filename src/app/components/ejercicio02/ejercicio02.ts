@@ -14,7 +14,6 @@ export class Ejercicio02 {
   calcularIMC() {
     const alturaEnMetros = this.altura / 100;
     this.imc = this.peso / (alturaEnMetros * alturaEnMetros);
-    alert(`Tu IMC es ${this.imc}`);
   }
 
 }
